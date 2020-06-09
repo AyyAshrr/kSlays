@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    
+    font-family: 'Kaushan Script', cursive;
 }
 
 body {
@@ -189,39 +189,54 @@ body {
 #about-me h1{
     color: white;
     text-align: center;
+    font-size: 28px;
 }
 #about-me h2{
     color: white;
     text-align: center;
+    max-width: 480px;
+    margin: auto;
+    padding-bottom: 3rem;
 }
 /* END OF ABOUT KSLAYS */
 
 
 /*PRICE LIST*/
+/*Price  List Title*/
+#plhead {
+    font-size: 32px;
+    color: honeydew;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
 /* Create three columns of equal width */
 .columns {
     float: left;
-    width: 33.3%;
-    padding: 8px;
+    width: 30%;
+    /* padding: 8px; */
     text-align: center;
+    min-height: 595px;
+    margin: 10px;
+    background-color:rgb(84, 83, 83) ;
     
   }
   
   /* Style the list */
   .price {
     list-style-type: none;
-    border: 1px solid #eee;
+    /* border: 2px solid #eee; */
     margin: 0;
     padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     overflow: hidden;
+   
   }
   
   /* Add shadows on hover */
   .price:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-    
     color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 1);
     transform: scale(1.1);
@@ -235,6 +250,10 @@ body {
     background-color: #111;
     color: white;
     font-size: 35px;
+    min-height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
   }
   
@@ -246,9 +265,11 @@ body {
   }
   
   /* Grey list item */
-  .price .grey {
+  .price .rate {
     background-color: rgb(135, 130, 130);
     font-size: 30px;
+    position: relative;
+    bottom: 0px;
   }
   
   
@@ -319,6 +340,14 @@ body {
 
   footer a{
     color: white;
+  }
+  footer i:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
   }
   footer h3{
       font-size: 1.5rem;
